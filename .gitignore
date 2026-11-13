@@ -7,6 +7,7 @@ app/build/
 captures/
 .externalNativeBuild/
 .cxx/
+__pycache__/
 
 # KHÔNG commit local.properties (chứa sdk.dir và admin.emails)
 local.properties
