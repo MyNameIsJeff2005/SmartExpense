@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorControlNormal">
+    <!-- Ví: khung chữ nhật bo góc + nút cài nhỏ bên phải -->
+    <path
+        android:strokeColor="@android:color/white"
+        android:strokeWidth="2"
+        android:pathData="M3,7 H21 V19 H3 Z" />
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M15.5,12a2,2 0 1,1 -0.0001,0z M14,11h3v2h-3z" />
+</vector>

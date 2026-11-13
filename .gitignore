@@ -1,0 +1,26 @@
+*.iml
+.gradle/
+.idea/
+.DS_Store
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# KHÔNG commit local.properties (chứa sdk.dir và admin.emails)
+local.properties
+
+# Keystore và mật khẩu keystore không được commit
+*.jks
+*.keystore
+keystore.properties
+
+# APK/AAB dựng ra không commit
+*.apk
+*.aab
+output.json
+
+# google-services.json CỐ Ý commit ở đây vì dùng bản placeholder
+# để project build được; nhóm thay bằng file thật tải từ Firebase Console
+# (điền package com.example.smartexpense) rồi giữ nguyên trong Git nếu muốn.

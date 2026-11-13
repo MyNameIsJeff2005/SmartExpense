@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kích thước dùng chung - mật độ "Người dùng" mục 4.3 -->
+<resources>
+    <dimen name="screen_margin">24dp</dimen>
+    <dimen name="block_spacing">16dp</dimen>
+
+    <dimen name="card_radius_large">28dp</dimen>
+    <dimen name="card_radius_medium">20dp</dimen>
+    <dimen name="card_radius_small">16dp</dimen>
+    <dimen name="input_radius">12dp</dimen>
+
+    <dimen name="button_height">56dp</dimen>
+
+    <dimen name="amount_balance_text">36sp</dimen>
+    <dimen name="amount_input_text">56sp</dimen>
+</resources>

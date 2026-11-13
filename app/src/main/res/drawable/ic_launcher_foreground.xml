@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Lop foreground cua adaptive icon: vi (wallet) thao tap tu icon/icon_launcher.fig.
+    Thiet ke 256x256 duoc thu nhan vao vung trung tam 72dp (scale 0.28125) de
+    toan bo hinh vi nam trong vung an toan 66dp cua adaptive icon.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- #2e5dc5 -->
+    <group
+        android:scaleX="0.28125"
+        android:scaleY="0.28125"
+        android:translateX="18"
+        android:translateY="18">
+        <path
+            android:fillColor="#2e5dc5"
+            android:pathData="M64,91 L64,83C64,75,69,69,77,67L161,48C171,46,180,53,180,63L180,91Z M178,116 L207,116L207,158L178,158C167,158,158,149,158,137C158,125,167,116,178,116Z M89,139 L82,139C79.24,139,77,141.24,77,144L77,171C77,173.76,79.24,176,82,176L89,176C91.76,176,94,173.76,94,171L94,144C94,141.24,91.76,139,89,139Z M114,122 L107,122C104.24,122,102,124.24,102,127L102,171C102,173.76,104.24,176,107,176L114,176C116.76,176,119,173.76,119,171L119,127C119,124.24,116.76,122,114,122Z M139,105 L132,105C129.24,105,127,107.24,127,110L127,171C127,173.76,129.24,176,132,176L139,176C141.76,176,144,173.76,144,171L144,110C144,107.24,141.76,105,139,105Z" />
+    </group>
+    <!-- #f1f9e9 -->
+    <group
+        android:scaleX="0.28125"
+        android:scaleY="0.28125"
+        android:translateX="18"
+        android:translateY="18">
+        <path
+            android:fillColor="#f1f9e9"
+            android:pathData="M54,100 C54,87,64,77,77,77L181,77C193,77,202,86,202,98L202,177C202,190,192,200,179,200L77,200C64,200,54,190,54,177L54,100Z" />
+    </group>
+    <!-- #0c5143 -->
+    <group
+        android:scaleX="0.28125"
+        android:scaleY="0.28125"
+        android:translateX="18"
+        android:translateY="18">
+        <path
+            android:fillColor="#0c5143"
+            android:pathData="M178,143 C181.31,143,184,140.31,184,137C184,133.69,181.31,131,178,131C174.69,131,172,133.69,172,137C172,140.31,174.69,143,178,143Z" />
+    </group>
+</vector>

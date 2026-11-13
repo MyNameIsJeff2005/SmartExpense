@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Danh mục Thưởng: hộp quà -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M4,9 H20 V12 H4 Z" />
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M5,13 H19 V21 H5 Z" />
+    <path
+        android:strokeColor="@android:color/white"
+        android:strokeWidth="2"
+        android:pathData="M12,3 C10,3 9,4 9,6 L9,8 M12,3 C14,3 15,4 15,6 L15,8" />
+</vector>

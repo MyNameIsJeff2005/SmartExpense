@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Bảng màu CHẾ ĐỘ TỐI (mục 4.1).
+    Khi AppCompatDelegate bật MODE_NIGHT_YES, Android tự dùng các màu cùng tên ở đây,
+    nên toàn bộ layout/style không cần sửa gì thêm.
+-->
+<resources>
+    <color name="blue_primary">#3B82F6</color>
+    <color name="blue_light">#17233D</color>
+    <color name="blue_chart_muted">#1E3A6E</color>
+
+    <color name="screen_bg">#121214</color>
+    <color name="surface">#1C1C1F</color>
+    <!-- "white" giữ nguyên trắng vì còn dùng làm chữ trên nền xanh (nút, tab) -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="text_primary">#F3F4F6</color>
+    <color name="text_secondary">#A1A1AA</color>
+    <color name="text_hint">#71717A</color>
+
+    <color name="green">#22C55E</color>
+    <color name="green_light">#12301F</color>
+    <color name="red">#F87171</color>
+    <color name="red_light">#3A1A1A</color>
+
+    <!-- Màu pastel cho icon màn Cài đặt (chế độ tối) -->
+    <color name="orange">#FB923C</color>
+    <color name="orange_light">#3B2A18</color>
+    <color name="purple">#A78BFA</color>
+    <color name="purple_light">#2B2244</color>
+    <color name="pink">#F472B6</color>
+    <color name="pink_light">#3A1F2C</color>
+
+    <color name="divider">#2A2A2F</color>
+
+    <!-- Nhật ký thay đổi dạng dòng thời gian + nút chuyển biểu đồ -->
+    <color name="changelog_chip_bg">#2A2A2E</color>
+    <color name="timeline_line">#3F3F46</color>
+    <color name="timeline_dot">#71717A</color>
+    <color name="group_header_bg">#232327</color>
+    <color name="group_count_bg">#3A3A40</color>
+</resources>

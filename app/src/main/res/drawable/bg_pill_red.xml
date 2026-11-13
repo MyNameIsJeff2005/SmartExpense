@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pill nền đỏ nhạt (trạng thái Bị khóa, nút nguy hiểm) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/red_light" />
+    <corners android:radius="999dp" />
+</shape>

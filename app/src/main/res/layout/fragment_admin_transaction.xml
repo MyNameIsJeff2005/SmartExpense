@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tab Giao dịch hệ thống admin (mục 6.5): DỮ LIỆU MINH HỌA, chip lọc, giao dịch gắn cờ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_tab_transactions"
+        android:textAppearance="@style/TextAppearance.App.Title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/admin_sample_note"
+        android:textColor="@color/text_hint"
+        android:textSize="11sp" />
+
+    <!-- Chip lọc: Tất cả / Thu / Chi / Bị gắn cờ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/chip_all"
+            style="@style/FilterChip"
+            android:text="@string/list_filter_all" />
+
+        <TextView
+            android:id="@+id/chip_income"
+            style="@style/FilterChip"
+            android:layout_marginStart="8dp"
+            android:text="@string/list_filter_income" />
+
+        <TextView
+            android:id="@+id/chip_expense"
+            style="@style/FilterChip"
+            android:layout_marginStart="8dp"
+            android:text="@string/list_filter_expense" />
+
+        <TextView
+            android:id="@+id/chip_flagged"
+            style="@style/FilterChip"
+            android:layout_marginStart="8dp"
+            android:text="@string/admin_filter_flagged" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_admin_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        tools:context="com.example.smartexpense.ui.admin.AdminTransactionFragment"
+        tools:listitem="@layout/item_admin_transaction" />
+</LinearLayout>

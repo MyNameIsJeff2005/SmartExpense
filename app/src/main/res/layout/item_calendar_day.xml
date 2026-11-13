@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ô ngày trong lưới lịch: con số + chấm xanh lá/đỏ nếu có giao dịch (mục 3.11) -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/day_root"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_day_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            tools:text="28" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/dot_income"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/bg_badge_circle"
+                android:visibility="gone"
+                tools:backgroundTint="@color/green"
+                tools:visibility="visible" />
+
+            <View
+                android:id="@+id/dot_expense"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_badge_circle"
+                android:visibility="gone"
+                tools:backgroundTint="@color/red"
+                tools:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

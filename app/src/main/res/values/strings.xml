@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartExpense</string>
+
+    <!-- ================= Tabs ================= -->
+    <string name="tab_home">Trang chủ</string>
+    <string name="tab_transactions">Giao dịch</string>
+    <string name="tab_stats">Thống kê</string>
+    <string name="tab_profile">Cài đặt</string>
+
+    <!-- ================= Auth ================= -->
+    <string name="auth_login_title">Đăng nhập</string>
+    <string name="auth_login_subtitle">Chào mừng bạn quay trở lại SmartExpense</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="hint_full_name">Họ và tên</string>
+    <string name="hint_confirm_password">Xác nhận mật khẩu</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="btn_go_register">Chưa có tài khoản? Đăng ký</string>
+    <string name="btn_forgot_password">Quên mật khẩu?</string>
+    <string name="auth_register_title">Đăng ký</string>
+    <string name="auth_register_subtitle">Tạo tài khoản để bắt đầu quản lý chi tiêu</string>
+    <string name="btn_register">Đăng ký</string>
+    <string name="btn_go_login">Đã có tài khoản? Đăng nhập</string>
+    <string name="auth_forgot_title">Quên mật khẩu</string>
+    <string name="auth_forgot_subtitle">Nhập email đã đăng ký để nhận liên kết đặt lại mật khẩu</string>
+    <string name="btn_send_reset">Gửi mã xác nhận</string>
+    <string name="btn_back_login">Quay lại đăng nhập</string>
+
+    <!-- ================= Lỗi nhập liệu ================= -->
+    <string name="error_required">Không được để trống</string>
+    <string name="error_invalid_email">Email không hợp lệ</string>
+    <string name="error_password_weak">Mật khẩu cần tối thiểu 6 ký tự</string>
+    <string name="error_password_mismatch">Mật khẩu xác nhận không khớp</string>
+
+    <!-- ================= Trang chủ ================= -->
+    <string name="home_income">Thu nhập</string>
+    <string name="home_expense">Chi tiêu</string>
+    <string name="home_balance">Số dư</string>
+    <string name="home_recent">Giao dịch gần đây</string>
+    <string name="home_budget_over">Đã vượt hạn mức chi tiêu tháng!</string>
+    <string name="budget_text">Hạn mức: %1$s (%2$d%%)</string>
+
+    <!-- ================= Giao dịch ================= -->
+    <string name="list_filter_all">Tất cả</string>
+    <string name="list_filter_income">Thu</string>
+    <string name="list_filter_expense">Chi</string>
+    <string name="list_mode_default">Danh sách</string>
+    <string name="list_mode_calendar">Lịch</string>
+    <string name="list_empty">Chưa có giao dịch nào</string>
+    <string name="add_edit_add_title">Thêm giao dịch</string>
+    <string name="add_edit_edit_title">Sửa giao dịch</string>
+    <string name="label_vnd">VND</string>
+    <string name="chip_date">Ngày</string>
+    <string name="chip_time">Giờ</string>
+    <string name="hint_note">Ghi chú</string>
+    <string name="warn_future_date">Cảnh báo: ngày ở tương lai</string>
+    <string name="btn_save">Lưu</string>
+    <string name="error_amount">Số tiền phải lớn hơn 0</string>
+    <string name="error_category">Hãy chọn một danh mục</string>
+    <string name="detail_title">Chi tiết giao dịch</string>
+    <string name="detail_type">Loại</string>
+    <string name="detail_category">Danh mục</string>
+    <string name="detail_date">Ngày</string>
+    <string name="detail_note">Ghi chú</string>
+    <string name="detail_created">Thời điểm tạo</string>
+    <string name="btn_delete">Xóa</string>
+    <string name="btn_edit">Sửa</string>
+    <string name="delete_confirm_title">Xóa giao dịch?</string>
+    <string name="delete_confirm_msg">Giao dịch sẽ bị xóa vĩnh viễn khỏi thiết bị này.</string>
+
+    <!-- ================= Thống kê ================= -->
+    <string name="stat_empty">Tháng này chưa có giao dịch nào</string>
+    <string name="stat_no_expense">Tháng này chưa có chi tiêu theo danh mục</string>
+    <string name="stat_by_category">Chi tiêu theo danh mục</string>
+    <string name="stat_chart_pie">Biểu đồ tròn</string>
+    <string name="stat_chart_bar">Biểu đồ cột dọc</string>
+
+    <!-- ================= Hồ sơ ================= -->
+    <string name="profile_budget">Hạn mức chi tiêu tháng</string>
+    <string name="profile_admin_entry">Quản trị</string>
+    <string name="profile_theme">Chế độ sáng / tối</string>
+    <string name="profile_sync">Đồng bộ hồ sơ với Firebase</string>
+    <string name="profile_version">Phiên bản ứng dụng</string>
+
+    <!-- ================= Tab Cài đặt (mục 5.8) ================= -->
+    <string name="settings_title">Cài đặt</string>
+    <string name="settings_section_account">Tài khoản</string>
+    <string name="settings_section_settings">Cài đặt</string>
+    <string name="settings_section_data">Dữ liệu</string>
+    <string name="settings_section_about">Giới thiệu</string>
+    <string name="settings_personal_info">Thông tin cá nhân</string>
+    <string name="settings_notifications">Thông báo</string>
+    <string name="settings_dark_mode">Chế độ tối</string>
+    <string name="settings_help">Trợ giúp</string>
+    <string name="settings_changelog">Xem nhật ký thay đổi</string>
+    <string name="settings_changelog_desc">Có gì mới trong phiên bản này</string>
+    <string name="settings_rates">Tỷ giá USD→VND</string>
+    <string name="settings_rates_desc">Cập nhật từ open.er-api.com</string>
+    <string name="rates_updated">Cập nhật lúc %1$s</string>
+    <string name="rates_offline">Hiển thị tỷ giá đã lưu (ngoại tuyến)</string>
+    <string name="rates_error">Lỗi mạng – bấm để thử lại</string>
+    <string name="cl_140_add_exchange_rate">Thêm phân hệ Tỷ giá USD→VND: tải JSON từ open.er-api.com bằng Retrofit, lưu cache Room và hiển thị theo 3 trạng thái Loading / Success / Error</string>
+    <string name="cl_140_add_package_structure">Tổ chức lại mã nguồn theo cấu trúc package chuẩn: ui, viewmodel, model, repository, adapter</string>
+    <string name="cl_140_update_room_v2">Nâng cơ sở dữ liệu Room lên phiên bản 2 với bảng exchange_rates và migration tự động</string>
+    <string name="changelog_app_chip">%1$s • v%2$s</string>
+    <string name="changelog_version_short">v%1$s</string>
+    <string name="changelog_installed">Đã cài</string>
+    <string name="changelog_earlier">Phiên bản trước</string>
+    <string name="changelog_time_today">Hôm nay</string>
+    <string name="changelog_time_yesterday">Hôm qua</string>
+    <string name="changelog_show_all">Hiện tất cả (%1$d)</string>
+    <string name="changelog_show_less">Thu gọn</string>
+    <string name="changelog_expand">Mở rộng hoặc thu gọn chi tiết</string>
+    <string name="cd_changelog">Nhật ký thay đổi</string>
+    <!-- Nhật ký thay đổi 1.3.1: lịch, nút biểu đồ, animation, quản lý tài khoản -->
+    <string name="cl_1311_add_account_edit_delete">Thêm nút Chỉnh sửa tài khoản và Xóa tài khoản; xóa đòi hỏi xác nhận với đếm ngược 5 giây chống bấm nhầm</string>
+    <string name="cl_1311_add_chart_anim">Biểu đồ tròn và biểu đồ cột có hiệu ứng chuyển động khi có dữ liệu</string>
+    <string name="cl_1311_fix_calendar_dark">Số ngày trong Lịch hiển thị đúng màu ở chế độ tối</string>
+    <string name="cl_1311_fix_calendar_empty">Gỡ chữ "No transactions yet" nằm đè lên lưới lịch</string>
+    <string name="cl_1311_fix_chart_button">Nút chuyển biểu đồ tròn/cột bo tròn dạng pill tròn như thiết kế</string>
+    <!-- Nhật ký thay đổi 1.3.0: hồ sơ trên Firebase Firestore -->
+    <string name="cl_1300_add_firestore">Hồ sơ tài khoản sau đăng ký/đăng nhập được lưu vào cơ sở dữ liệu Firebase Firestore</string>
+    <string name="cl_1300_add_restore">Đăng nhập trên máy mới tự khôi phục hồ sơ từ Firestore</string>
+    <string name="cl_1300_add_sync">Đồng bộ hồ sơ trong Cài đặt/Quản trị hoạt động ngay, không cần cấu hình server REST riêng</string>
+    <string name="cl_124_add_changelog_ui">Thiết kế lại Nhật ký thay đổi dạng dòng thời gian, mở rộng để xem chi tiết New / Fix / Remove</string>
+    <string name="cl_124_add_chart_toggle">Thêm nút chuyển đổi giữa biểu đồ tròn và biểu đồ cột dọc trong Thống kê</string>
+    <string name="cl_124_add_bar_chart">Thêm biểu đồ cột dọc xếp chồng theo danh mục chi tiêu</string>
+    <string name="cl_124_fix_pie_full">Sửa biểu đồ tròn để lấp đầy toàn bộ vòng tròn, không còn khoảng trống</string>
+    <string name="cl_124_fix_about_row">Đổi tên mục Changelog trong Cài đặt thành View changelogs và cập nhật ghi chú</string>
+    <string name="cl_124_remove_old_changelog">Bỏ giao diện Nhật ký thay đổi dạng thẻ cũ</string>
+    <string name="cl_130_add_changelog">Thêm màn Nhật ký thay đổi trong Cài đặt, xem lịch sử từ 1.0 đến 1.2.3</string>
+    <string name="cl_130_fix_backup_path">Sửa lỗi không ghi được bản sao lưu vào thư mục tự chọn trên Android 11+</string>
+    <string name="cl_130_fix_backup_error">Sửa thông báo lỗi khi sao lưu hoặc khôi phục để luôn hiển thị rõ nguyên nhân</string>
+    <string name="cl_122_add_backup_restore">Thêm Sao lưu và Khôi phục thay cho Xuất CSV và Nhập CSV</string>
+    <string name="cl_122_add_auto_backup">Thêm Tự động sao lưu khi phát hiện phiên bản ứng dụng mới (công tắc, mặc định bật)</string>
+    <string name="cl_122_add_backup_path">Thêm Đường dẫn sao lưu: chọn thư mục bất kỳ hoặc dùng thư mục mặc định</string>
+    <string name="cl_122_change_file_name">Đổi tên tệp sao lưu theo thời gian: smartexpense_backup_yyyyMMdd_HHmmss.csv</string>
+    <string name="cl_122_remove_csv_rows">Bỏ hai dòng Xuất CSV và Nhập CSV khỏi nhóm Dữ liệu (vẫn quản lý trong màn Quản trị)</string>
+    <string name="cl_121_add_settings_tab">Thêm tab Cài đặt với 4 nhóm: Tài khoản, Cài đặt, Dữ liệu, Giới thiệu</string>
+    <string name="cl_121_add_account_screen">Thêm màn Tài khoản: ảnh đại diện, tên, giới tính, tuổi và email</string>
+    <string name="cl_121_add_home_logo">Thêm logo và tên SmartExpense ở đầu Trang chủ</string>
+    <string name="cl_121_fix_insets">Sửa nội dung bị đè lên thanh trạng thái trên Android 15+</string>
+    <string name="cl_121_fix_fab">Sửa nút + để ẩn khi đang ở tab Cài đặt</string>
+    <string name="cl_120_add_category_manage">Thêm Quản lý danh mục trong Quản trị: thêm, sửa, xóa và đổi biểu tượng</string>
+    <string name="cl_120_add_activity_log">Thêm Nhật ký hoạt động ghi lại thao tác của quản trị viên</string>
+    <string name="cl_120_add_sample_data">Thêm dữ liệu mẫu để thử nghiệm nhanh</string>
+    <string name="cl_120_change_stats">Cải thiện Thống kê với biểu đồ tròn theo danh mục và bảng chú thích</string>
+    <string name="cl_120_fix_sync">Sửa đồng bộ hồ sơ với server ổn định hơn</string>
+    <string name="cl_110_add_auth">Thêm đăng ký, đăng nhập Firebase, quên mật khẩu và chế độ Demo</string>
+    <string name="cl_110_add_admin_users">Thêm Quản trị người dùng: xem chi tiết, khóa hoặc mở khóa và đổi vai trò</string>
+    <string name="cl_110_add_search_filter">Thêm tìm kiếm và lọc giao dịch theo danh mục, tháng</string>
+    <string name="cl_110_add_budget">Thêm hạn mức chi tiêu tháng và cảnh báo khi vượt hạn mức</string>
+    <string name="cl_110_fix_currency">Thống nhất hiển thị tiền tệ VND trên toàn ứng dụng</string>
+    <string name="cl_100_add_app">Ra mắt SmartExpense - ứng dụng quản lý chi tiêu cá nhân</string>
+    <string name="cl_100_add_transactions">Thêm ghi thu nhập và chi tiêu với danh mục, ghi chú và ngày</string>
+    <string name="cl_100_add_overview">Thêm Trang chủ tổng quan số dư, thu nhập và chi tiêu trong tháng</string>
+    <string name="cl_100_add_list_calendar">Thêm danh sách giao dịch nhóm theo ngày và xem theo lịch</string>
+    <string name="cl_100_add_stats">Thêm Thống kê theo danh mục với biểu đồ</string>
+    <string name="cl_100_add_theme_language">Thêm giao diện sáng hoặc tối và chuyển đổi Tiếng Việt, English</string>
+    <string name="cl_100_add_room_offline">Lưu dữ liệu offline bằng Room, không cần mạng</string>
+    <string name="settings_backup">Sao lưu</string>
+    <string name="settings_restore">Khôi phục</string>
+    <string name="settings_auto_backup">Tự động sao lưu</string>
+    <string name="settings_auto_backup_desc">Tự động sao lưu toàn bộ dữ liệu khi phát hiện phiên bản ứng dụng mới</string>
+    <string name="settings_backup_path">Đường dẫn sao lưu</string>
+    <string name="settings_backup_path_default">Mặc định</string>
+    <string name="backup_path_dialog_msg">Bản sao lưu sẽ được lưu vào:\n%1$s</string>
+    <string name="backup_path_change">Chọn thư mục</string>
+    <string name="backup_path_reset">Dùng mặc định</string>
+    <string name="backup_path_saved">Đã đặt thư mục sao lưu</string>
+    <string name="backup_done">Đã sao lưu vào %1$s</string>
+    <string name="backup_failed_msg">Không sao lưu được: %1$s</string>
+    <string name="backup_no_data">Chưa có dữ liệu để sao lưu</string>
+    <string name="backup_write_failed">Không ghi được tệp sao lưu</string>
+    <string name="auto_backup_on">Đã bật tự động sao lưu</string>
+    <string name="auto_backup_off">Đã tắt tự động sao lưu</string>
+    <string name="restore_done">Đã khôi phục: %1$d thêm mới, %2$d cập nhật, %3$d bỏ qua</string>
+    <string name="restore_failed">Khôi phục thất bại: %1$s</string>
+    <string name="cd_restore">Khôi phục dữ liệu</string>
+    <string name="cd_auto_backup">Tự động sao lưu</string>
+    <string name="cd_backup_folder">Thư mục sao lưu</string>
+    <string name="settings_on">Bật</string>
+    <string name="settings_off">Tắt</string>
+    <string name="settings_help_title">Trợ giúp</string>
+    <string name="settings_help_msg">SmartExpense giúp bạn ghi lại thu nhập, chi tiêu và theo dõi hạn mức theo tháng.\n\n• Nhấn nút + để thêm giao dịch.\n• Chọn tab Giao dịch để xem danh sách hoặc lịch.\n• Đổi ngôn ngữ, chế độ tối và thông tin tài khoản ngay trong Cài đặt.\n• Xuất CSV để sao lưu dữ liệu hồ sơ.\n\nNếu cần hỗ trợ thêm, hãy liên hệ quản trị viên của ứng dụng.</string>
+    <string name="settings_github">Github</string>
+    <string name="settings_github_link">github.com</string>
+    <string name="settings_notifications_unavailable">Không mở được cài đặt thông báo trên thiết bị này</string>
+    <string name="settings_github_unavailable">Không mở được trình duyệt</string>
+    <string name="about_version">Phiên bản %1$s</string>
+    <string name="about_app_msg">SmartExpense là ứng dụng quản lý chi tiêu cá nhân: ghi chép giao dịch, thống kê theo danh mục và đồng bộ hồ sơ lên server.</string>
+    <string name="logout_confirm_msg">Bạn có chắc muốn đăng xuất khỏi SmartExpense?</string>
+
+    <!-- ================= Màn chỉnh sửa tài khoản ================= -->
+    <string name="account_title">Tài khoản</string>
+    <string name="account_photo">Ảnh</string>
+    <string name="account_upload_image">Tải ảnh lên</string>
+    <string name="account_name">Tên</string>
+    <string name="account_gender">Giới tính</string>
+    <string name="account_age">Tuổi</string>
+    <string name="account_email">Email</string>
+    <string name="account_male">Nam</string>
+    <string name="account_female">Nữ</string>
+    <string name="account_name_required">Tên không được để trống</string>
+    <string name="account_age_invalid">Tuổi phải nằm trong khoảng 1 - 120</string>
+    <string name="account_save_done">Đã lưu thông tin tài khoản</string>
+    <string name="account_save_failed">Không lưu được thông tin tài khoản</string>
+    <string name="account_pick_image_failed">Không đọc được ảnh đã chọn</string>
+    <!-- Edit/Delete account (1.3.1) -->
+    <string name="account_edit">Chỉnh sửa tài khoản</string>
+    <string name="account_delete">Xóa tài khoản</string>
+    <string name="account_delete_confirm_msg">Bạn có chắc sẽ xóa tài khoản này? Toàn bộ giao dịch và hồ sơ sẽ bị xóa khỏi cơ sở dữ liệu.</string>
+    <string name="account_yes">Có</string>
+    <string name="account_no">Không</string>
+    <string name="account_yes_countdown">Chờ %1$d giây…</string>
+    <string name="account_delete_done">Đã xóa tài khoản</string>
+    <string name="account_delete_failed">Không xóa được tài khoản, thử lại sau</string>
+    <string name="cd_back">Quay lại</string>
+    <string name="cd_save">Lưu thay đổi</string>
+    <string name="cd_avatar">Ảnh đại diện</string>
+
+    <!-- ================= Giao diện sáng/tối ================= -->
+    <string name="theme_title">Chế độ giao diện</string>
+    <string name="theme_system">Theo hệ thống</string>
+    <string name="theme_light">Sáng</string>
+    <string name="theme_dark">Tối</string>
+
+    <!-- ================= Firebase Firestore / đồng bộ hồ sơ (1.3.0) ================= -->
+    <string name="admin_database">Cơ sở dữ liệu đám mây</string>
+    <string name="sync_pull">Tải hồ sơ từ Firestore về máy</string>
+    <string name="sync_push">Đẩy dữ liệu máy lên Firestore</string>
+    <string name="sync_last_at">Lần đồng bộ gần nhất: %1$s</string>
+    <string name="sync_never">Chưa từng đồng bộ</string>
+    <string name="sync_confirm_msg">Hồ sơ của bạn (tên, email, ngày tạo) sẽ được lưu vào cơ sở dữ liệu Firestore trên Firebase. Mật khẩu không bao giờ được gửi. Tiếp tục?</string>
+    <string name="sync_confirm_now">Đồng bộ ngay</string>
+
+    <!-- ================= Admin - nhập/xuất CSV ================= -->
+    <string name="csv_export_file">Xuất CSV ra file…</string>
+    <string name="csv_import_file">Nhập CSV từ file…</string>
+    <string name="csv_import_confirm_title">Nhập CSV vào hệ thống?</string>
+    <string name="csv_import_confirm_msg">Hồ sơ trùng uid sẽ được cập nhật, uid mới sẽ được thêm vào Room và file accounts.csv. Không ảnh hưởng mật khẩu.</string>
+    <string name="csv_export_done">Đã xuất %1$d dòng ra file</string>
+    <string name="csv_import_done">Nhập CSV: %1$d thêm mới, %2$d cập nhật, %3$d bỏ qua</string>
+    <string name="csv_import_failed">Không nhập được CSV: %1$s</string>
+    <string name="csv_export_failed">Không xuất được CSV: %1$s</string>
+    <string name="csv_io_failed">Thao tác CSV thất bại: %1$s</string>
+    <string name="csv_io_hint">Dùng nút bên dưới để xuất/nhập file CSV tài khoản khách hàng qua trình chọn file của Android (không cần cấp quyền bộ nhớ).</string>
+
+    <string name="btn_logout">Đăng xuất</string>
+    <string name="btn_ok">Lưu</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="budget_dialog_title">Hạn mức chi tiêu tháng</string>
+    <string name="budget_dialog_hint">Nhập số tiền (VND)</string>
+
+    <!-- ================= Admin - chung ================= -->
+    <string name="admin_tab_overview">Tổng quan</string>
+    <string name="admin_tab_users">Người dùng</string>
+    <string name="admin_tab_transactions">Giao dịch</string>
+    <string name="admin_tab_settings">Cài đặt</string>
+    <string name="admin_greeting">Xin chào, Admin</string>
+    <string name="admin_pill_admin">Admin</string>
+    <string name="metric_users">Người dùng</string>
+    <string name="metric_transactions">Giao dịch</string>
+    <string name="metric_active_today">Hoạt động hôm nay</string>
+    <string name="metric_locked">Tài khoản bị khóa</string>
+    <string name="admin_new_users_7d">Người dùng mới 7 ngày</string>
+    <string name="admin_sample_note">Dữ liệu minh họa</string>
+    <string name="admin_filter_flagged">Cảnh báo</string>
+    <string name="user_role_admin">Admin</string>
+    <string name="user_role_user">Người dùng</string>
+
+    <!-- ================= Admin - danh sách & chi tiết user ================= -->
+    <string name="user_list_title">Người dùng</string>
+    <string name="search_hint">Tìm theo tên hoặc email</string>
+    <string name="status_active">Hoạt động</string>
+    <string name="status_locked">Bị khóa</string>
+    <string name="user_detail_title">Chi tiết người dùng</string>
+    <string name="user_created_at">Ngày tham gia</string>
+    <string name="user_tx_count">Số giao dịch</string>
+    <string name="user_last_login">Đăng nhập gần nhất</string>
+    <string name="user_role_row">Vai trò</string>
+    <string name="btn_lock">Khóa tài khoản</string>
+    <string name="btn_unlock">Mở khóa</string>
+    <string name="btn_reset_password">Đặt lại mật khẩu</string>
+    <string name="lock_confirm_title">Khóa tài khoản?</string>
+    <string name="lock_confirm_msg">Tài khoản sẽ không đăng nhập được trên thiết bị này. Bạn có thể mở khóa bất cứ lúc nào.</string>
+    <string name="unlock_confirm_title">Mở khóa tài khoản?</string>
+    <string name="unlock_confirm_msg">Tài khoản sẽ được phép đăng nhập bình thường trở lại.</string>
+    <string name="reset_password_confirm">Gửi email đặt lại mật khẩu tới địa chỉ này?</string>
+    <string name="cannot_lock_self">Không thể khóa chính mình hoặc một tài khoản admin khác</string>
+
+    <!-- ================= Admin - quản lý danh mục ================= -->
+    <string name="category_manage_title">Quản lý danh mục</string>
+    <string name="category_type_expense">Chi tiêu</string>
+    <string name="category_type_income">Thu nhập</string>
+    <string name="category_dialog_add_title">Thêm danh mục</string>
+    <string name="category_dialog_edit_title">Sửa danh mục</string>
+    <string name="category_dialog_name_hint">Tên danh mục</string>
+    <string name="category_dialog_color_hint">Mã màu (vd #2563EB)</string>
+    <string name="category_error_invalid_color">Mã màu không hợp lệ</string>
+
+    <!-- ================= Admin - CSV ================= -->
+    <string name="csv_manage_title">Quản lý file CSV</string>
+    <string name="csv_file_status">Trạng thái file</string>
+    <string name="csv_exists">Tồn tại</string>
+    <string name="csv_missing">Chưa tồn tại</string>
+    <string name="csv_size">Kích thước</string>
+    <string name="csv_rows">Số dòng dữ liệu</string>
+    <string name="csv_modified">Sửa lần cuối</string>
+    <string name="csv_room_count">Số hồ sơ Room</string>
+    <string name="csv_ok">CSV khớp với Room</string>
+    <string name="csv_warning_missing">File CSV chưa tồn tại. Đăng ký mới sẽ chỉ ghi Room; dùng \"Dựng lại CSV\" để tạo file đầy đủ.</string>
+    <string name="csv_warning_mismatch">CSV thiếu hoặc lệch so với Room. Hãy dùng \"Dựng lại CSV\".</string>
+    <string name="btn_rebuild_csv">Dựng lại CSV</string>
+    <string name="btn_delete_csv">Xóa file CSV</string>
+    <string name="rebuild_confirm_title">Dựng lại CSV từ Room?</string>
+    <string name="rebuild_confirm_msg">File accounts.csv sẽ được tạo lại với toàn bộ hồ sơ hiện có, không tạo dòng trùng.</string>
+    <string name="delete_csv_confirm_title_1">Xóa file CSV?</string>
+    <string name="delete_csv_confirm_msg_1">Đây là bước 1/2. File chỉ bị xóa ở bước xác nhận cuối.</string>
+    <string name="delete_csv_confirm_title_2">Xóa thật sự?</string>
+    <string name="delete_csv_confirm_msg_2">File accounts.csv sẽ bị xóa khỏi vùng dữ liệu của app (Room và Firebase vẫn giữ nguyên dữ liệu).</string>
+    <string name="switch_auto_recreate">Tự động tạo lại CSV khi file bị xóa</string>
+    <string name="switch_desc_on">BẬT: khi file bị mất, app tự dựng lại từ Room khi mở app, đăng nhập hoặc đăng ký.</string>
+    <string name="switch_desc_off">TẮT: app không tự tạo file. Đăng ký mới vẫn ghi Room; admin có thể thấy cảnh báo CSV thiếu.</string>
+    <string name="admin_settings_categories">Quản lý danh mục</string>
+    <string name="admin_settings_csv">Quản lý file CSV</string>
+    <string name="admin_settings_logs">Nhật ký hoạt động</string>
+    <string name="admin_settings_backup">Sao lưu dữ liệu</string>
+    <string name="admin_settings_csv_badge">CSV thiếu/lệch</string>
+
+    <!-- ================= Log ================= -->
+    <string name="activity_log_title">Nhật ký hoạt động</string>
+    <string name="log_empty">Chưa có hoạt động nào được ghi</string>
+    <string name="log_action_lock">khóa tài khoản</string>
+    <string name="log_action_unlock">mở khóa</string>
+    <string name="log_action_reset_pw">đặt lại mật khẩu</string>
+    <string name="log_action_rebuild_csv">dựng lại CSV</string>
+    <string name="log_action_delete_csv">xóa CSV</string>
+    <string name="log_action_toggle_csv">đổi công tắc CSV</string>
+    <string name="preamble_demo">Xem nhanh app ngay không cần cấu hình?</string>
+    <string name="btn_demo">Chạy DEMO (dữ liệu mẫu nội bộ)</string>
+
+    <!-- ================= Nhãn dùng chung ================= -->
+    <string name="role_admin_title">Quản trị viên</string>
+    <string name="sys_syncing">Đang đồng bộ…</string>
+    <string name="tx_fallback_title">Giao dịch</string>
+    <string name="admin_only_msg">Chỉ tài khoản admin truy cập được phần này</string>
+    <string name="add_edit_save_failed">Không lưu được giao dịch</string>
+    <string name="log_toggle_on">BẬT</string>
+    <string name="log_toggle_off">TẮT</string>
+
+    <!-- ================= Thứ trong tuần (lịch) ================= -->
+    <string name="day_mon">T2</string>
+    <string name="day_tue">T3</string>
+    <string name="day_wed">T4</string>
+    <string name="day_thu">T5</string>
+    <string name="day_fri">T6</string>
+    <string name="day_sat">T7</string>
+    <string name="day_sun">CN</string>
+
+    <!-- ================= Thông báo xác thực ================= -->
+    <string name="msg_register_success">Đăng ký thành công</string>
+    <string name="msg_login_failed">Không đăng nhập được. Thử lại sau.</string>
+    <string name="msg_register_failed">Không tạo được tài khoản. Thử lại sau.</string>
+    <string name="msg_email_exists">Email này đã được đăng ký</string>
+    <string name="msg_weak_password">Mật khẩu quá yếu, hãy dùng ít nhất 6 ký tự</string>
+    <string name="msg_wrong_credentials">Email hoặc mật khẩu không đúng</string>
+    <string name="msg_auth_failed">Không thực hiện được. Kiểm tra mạng hoặc thử lại.</string>
+    <string name="msg_not_configured">Firebase chưa được cấu hình: hãy thay google-services.json thật (xem API_SETUP.md)</string>
+    <string name="msg_account_locked">Tài khoản của bạn đang bị khóa. Liên hệ quản trị viên để mở khóa.</string>
+    <string name="msg_reset_sent">Đã gửi email đặt lại mật khẩu. Kiểm tra hộp thư của bạn.</string>
+    <string name="msg_reset_failed">Không gửi được email đặt lại mật khẩu</string>
+
+    <!-- ================= Thông báo CSV ================= -->
+    <string name="msg_csv_save_failed">Đăng ký thành công nhưng ghi hồ sơ cục bộ/CSV thất bại. Đăng nhập lại để tự khôi phục.</string>
+    <string name="msg_csv_shared">Đã tạo bản sao CSV để chia sẻ</string>
+    <string name="msg_csv_share_failed">Không xuất được file CSV</string>
+    <string name="msg_csv_rebuilt">Đã dựng lại CSV từ dữ liệu Room</string>
+    <string name="msg_csv_deleted">Đã xóa file CSV</string>
+    <string name="msg_csv_delete_failed">Không xóa được file CSV</string>
+    <string name="msg_csv_import_failed">Không nhập được file CSV</string>
+    <string name="msg_csv_import_empty">File CSV không có dòng dữ liệu hợp lệ nào</string>
+    <string name="csv_err_write_target">Không mở được file đích để ghi</string>
+    <string name="csv_err_read_source">Không đọc được file đã chọn</string>
+
+    <!-- ================= Thông báo Firebase / đồng bộ ================= -->
+    <string name="msg_api_unreachable">Không kết nối được Firebase. Kiểm tra mạng rồi thử lại.</string>
+    <string name="msg_api_sync_failed">Đồng bộ thất bại</string>
+    <string name="msg_sync_pull_done">Đã tải %1$d hồ sơ từ Firestore</string>
+    <string name="msg_sync_push_done">Đã gửi %1$d hồ sơ lên Firestore</string>
+    <string name="profile_sync_no_profile">Chưa tải được hồ sơ, thử lại sau</string>
+    <string name="profile_sync_done">Đã đồng bộ hồ sơ lên Firebase</string>
+
+    <!-- ================= Thông báo giao dịch ================= -->
+    <string name="msg_tx_saved">Đã lưu giao dịch</string>
+    <string name="msg_tx_delete_success">Đã xóa giao dịch</string>
+    <string name="msg_tx_load_failed">Không tìm thấy giao dịch</string>
+
+    <!-- ================= Thông báo admin ================= -->
+    <string name="msg_locked_toast">Đã khóa tài khoản (chỉ có hiệu lực trên thiết bị này)</string>
+    <string name="msg_unlocked_toast">Đã mở khóa tài khoản</string>
+    <string name="msg_reset_sent_to">Đã gửi email đặt lại mật khẩu tới %1$s</string>
+    <string name="msg_admin_not_found">Không tìm thấy người dùng</string>
+    <string name="demo_account_name">Tài khoản Demo</string>
+
+    <!-- ================= Danh mục mặc định (seed lần đầu) ================= -->
+    <string name="cat_food">Ăn uống</string>
+    <string name="cat_transport">Đi lại</string>
+    <string name="cat_education">Học tập</string>
+    <string name="cat_shopping">Mua sắm</string>
+    <string name="cat_entertainment">Giải trí</string>
+    <string name="cat_health">Sức khỏe</string>
+    <string name="cat_salary">Lương</string>
+    <string name="cat_bonus">Thưởng</string>
+
+    <!-- ================= Ghi chú giao dịch demo ================= -->
+    <string name="demo_note_salary">Lương hàng tháng</string>
+    <string name="demo_note_bonus">Thưởng dự án</string>
+    <string name="demo_note_lunch">Cơm trưa căng tin</string>
+    <string name="demo_note_coffee">Cà phê với bạn</string>
+    <string name="demo_note_fuel">Đổ xăng</string>
+    <string name="demo_note_book">Sách chuyên ngành</string>
+    <string name="demo_note_clothes">Áo + giày mới</string>
+    <string name="demo_note_movie">Xem phim</string>
+    <string name="demo_note_dental">Khám nha khoa</string>
+    <string name="demo_note_party">Tiệc nhóm cuối tháng</string>
+
+    <!-- ================= Giao dịch minh họa của admin ================= -->
+    <string name="sample_owner_1">Phạm Hùng</string>
+    <string name="sample_owner_2">Nguyễn Văn A</string>
+    <string name="sample_owner_3">Lê Thị B</string>
+    <string name="sample_owner_4">Trần Mai</string>
+    <string name="sample_tx_1">Chuyển khoản lớn</string>
+    <string name="sample_tx_2">Lương tháng 10</string>
+    <string name="sample_tx_3">Ăn trưa văn phòng</string>
+    <string name="sample_tx_4">Ưu đãi học phí</string>
+    <string name="sample_tx_5">Xăng xe tuần</string>
+    <string name="sample_tx_6">Sách học tiếng Anh</string>
+    <string name="sample_tx_7">Thưởng dự án</string>
+    <string name="sample_tx_8">Xem phim cuối tuần</string>
+    <string name="sample_tx_9">Tiện ích tháng</string>
+    <string name="sample_tx_10">Thưởng quý</string>
+    <!-- Ngôn ngữ (mục 3.10) -->
+    <string name="profile_language">Ngôn ngữ</string>
+    <string name="language_title">Ngôn ngữ</string>
+    <string name="lang_system">Theo hệ thống</string>
+    <string name="btn_continue">Tiếp tục</string>
+
+    <!-- Thông báo cấp quyền dữ liệu khi xuất/nhập CSV qua My Files (mục 3.2c) -->
+    <string name="csv_permission_title">Cấp quyền dữ liệu</string>
+    <string name="csv_permission_msg">App sử dụng Storage Access Framework để làm việc với My Files của điện thoại: Android sẽ mở màn hình chọn tệp, bạn chỉ cần chọn nơi lưu hoặc tệp CSV cần thao tác. Quá trình này không cần quyền bộ nhớ toàn của, app chỉ đọc/viết đúng tệp bạn đã chọn.</string>
+    <!-- Số nhiều cho Nhật ký thay đổi (tiếng Việt không phân biệt số ít/số nhiều) -->
+    <plurals name="changelog_features">
+        <item quantity="other">%d tính năng</item>
+    </plurals>
+    <plurals name="changelog_fixes">
+        <item quantity="other">%d bản sửa lỗi</item>
+    </plurals>
+    <plurals name="changelog_removes">
+        <item quantity="other">%d mục đã bỏ</item>
+    </plurals>
+    <plurals name="changelog_days_ago">
+        <item quantity="other">%d ngày trước</item>
+    </plurals>
+    <plurals name="changelog_group_new">
+        <item quantity="other">Mới</item>
+    </plurals>
+    <plurals name="changelog_group_fix">
+        <item quantity="other">Sửa lỗi</item>
+    </plurals>
+    <plurals name="changelog_group_remove">
+        <item quantity="other">Đã bỏ</item>
+    </plurals>
+
+</resources>

@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Bản dịch TIẾNG ANH (values-en).
+    Android tự dùng file này khi ngôn ngữ hệ thống là English; các ngôn ngữ khác
+    quay về values/strings.xml (tiếng Việt).
+-->
+<resources>
+    <string name="app_name">SmartExpense</string>
+
+    <!-- ================= Tabs ================= -->
+    <string name="tab_home">Home</string>
+    <string name="tab_transactions">Transactions</string>
+    <string name="tab_stats">Statistics</string>
+    <string name="tab_profile">Settings</string>
+
+    <!-- ================= Auth ================= -->
+    <string name="auth_login_title">Sign in</string>
+    <string name="auth_login_subtitle">Welcome back to SmartExpense</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_full_name">Full name</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="btn_login">Sign in</string>
+    <string name="btn_go_register">No account yet? Sign up</string>
+    <string name="btn_forgot_password">Forgot password?</string>
+    <string name="auth_register_title">Sign up</string>
+    <string name="auth_register_subtitle">Create an account to start tracking your spending</string>
+    <string name="btn_register">Sign up</string>
+    <string name="btn_go_login">Already have an account? Sign in</string>
+    <string name="auth_forgot_title">Forgot password</string>
+    <string name="auth_forgot_subtitle">Enter your registered email to receive a password reset link</string>
+    <string name="btn_send_reset">Send reset link</string>
+    <string name="btn_back_login">Back to sign in</string>
+
+    <!-- ================= Validation ================= -->
+    <string name="error_required">This field is required</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_password_weak">Password must be at least 6 characters</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+
+    <!-- ================= Home ================= -->
+    <string name="home_income">Income</string>
+    <string name="home_expense">Expenses</string>
+    <string name="home_balance">Balance</string>
+    <string name="home_recent">Recent transactions</string>
+    <string name="home_budget_over">You have exceeded this month\'s budget!</string>
+    <string name="budget_text">Budget: %1$s (%2$d%%)</string>
+
+    <!-- ================= Transactions ================= -->
+    <string name="list_filter_all">All</string>
+    <string name="list_filter_income">Income</string>
+    <string name="list_filter_expense">Expense</string>
+    <string name="list_mode_default">List</string>
+    <string name="list_mode_calendar">Calendar</string>
+    <string name="list_empty">No transactions yet</string>
+    <string name="add_edit_add_title">Add transaction</string>
+    <string name="add_edit_edit_title">Edit transaction</string>
+    <string name="label_vnd">VND</string>
+    <string name="chip_date">Date</string>
+    <string name="chip_time">Time</string>
+    <string name="hint_note">Note</string>
+    <string name="warn_future_date">Warning: the date is in the future</string>
+    <string name="btn_save">Save</string>
+    <string name="error_amount">The amount must be greater than 0</string>
+    <string name="error_category">Please choose a category</string>
+    <string name="detail_title">Transaction details</string>
+    <string name="detail_type">Type</string>
+    <string name="detail_category">Category</string>
+    <string name="detail_date">Date</string>
+    <string name="detail_note">Note</string>
+    <string name="detail_created">Created at</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_edit">Edit</string>
+    <string name="delete_confirm_title">Delete this transaction?</string>
+    <string name="delete_confirm_msg">The transaction will be permanently removed from this device.</string>
+
+    <!-- ================= Statistics ================= -->
+    <string name="stat_empty">No transactions this month</string>
+    <string name="stat_no_expense">No spending by category this month</string>
+    <string name="stat_by_category">Spending by category</string>
+    <string name="stat_chart_pie">Pie chart</string>
+    <string name="stat_chart_bar">Vertical bar chart</string>
+
+    <!-- ================= Profile ================= -->
+    <string name="profile_budget">Monthly spending budget</string>
+    <string name="profile_admin_entry">Admin</string>
+    <string name="profile_theme">Light / dark mode</string>
+    <string name="profile_sync">Sync profile with Firebase</string>
+    <string name="profile_version">App version</string>
+
+    <!-- ================= Settings tab (5.8) ================= -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_account">Account</string>
+    <string name="settings_section_settings">Settings</string>
+    <string name="settings_section_data">Data</string>
+    <string name="settings_section_about">About</string>
+    <string name="settings_personal_info">Personal info</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_dark_mode">Dark mode</string>
+    <string name="settings_help">Help</string>
+    <string name="settings_changelog">View changelogs</string>
+    <string name="settings_changelog_desc">What\'s new in this version</string>
+    <string name="settings_rates">USD to VND rate</string>
+    <string name="settings_rates_desc">Updated from open.er-api.com</string>
+    <string name="rates_updated">Updated at %1$s</string>
+    <string name="rates_offline">Showing saved rate (offline)</string>
+    <string name="rates_error">Network error – tap to retry</string>
+    <string name="cl_140_add_exchange_rate">Added USD to VND exchange rate feature: JSON from open.er-api.com via Retrofit, Room cache and Loading / Success / Error states</string>
+    <string name="cl_140_add_package_structure">Reorganized source code into a standard package structure: ui, viewmodel, model, repository, adapter</string>
+    <string name="cl_140_update_room_v2">Upgraded Room database to version 2 with an exchange_rates table and automatic migration</string>
+    <string name="changelog_app_chip">%1$s • v%2$s</string>
+    <string name="changelog_version_short">v%1$s</string>
+    <string name="changelog_installed">Installed</string>
+    <string name="changelog_earlier">Earlier releases</string>
+    <string name="changelog_time_today">Today</string>
+    <string name="changelog_time_yesterday">Yesterday</string>
+    <string name="changelog_show_all">Show all (%1$d)</string>
+    <string name="changelog_show_less">Show less</string>
+    <string name="changelog_expand">Expand or collapse details</string>
+    <string name="cd_changelog">Changelog</string>
+    <!-- Changelog 1.3.1: calendar, chart button, animations, account management -->
+    <string name="cl_1311_add_account_edit_delete">Added Edit account and Delete account buttons; deleting requires a confirmation with a 5-second countdown to prevent accidental taps</string>
+    <string name="cl_1311_add_chart_anim">Pie chart and bar chart now animate when data arrives</string>
+    <string name="cl_1311_fix_calendar_dark">Calendar day numbers are now visible in dark mode</string>
+    <string name="cl_1311_fix_calendar_empty">Removed the "No transactions yet" text overlapping the calendar grid</string>
+    <string name="cl_1311_fix_chart_button">The pie/bar chart toggle is now a fully rounded pill button as designed</string>
+    <!-- Changelog 1.3.0: profiles stored on Firebase Firestore -->
+    <string name="cl_1300_add_firestore">Account profiles are now stored in the Firebase Firestore database after register/login</string>
+    <string name="cl_1300_add_restore">Logging in on a new device restores your profile from Firestore</string>
+    <string name="cl_1300_add_sync">Profile sync in Settings/Admin works out of the box, no separate REST server needed</string>
+    <string name="cl_124_add_changelog_ui">Redesigned the changelog as a timeline with expandable New / Fix / Remove details</string>
+    <string name="cl_124_add_chart_toggle">Added a toggle between the pie chart and the vertical bar chart in Statistics</string>
+    <string name="cl_124_add_bar_chart">Added a stacked vertical bar chart by expense category</string>
+    <string name="cl_124_fix_pie_full">Fixed the pie chart so it fills the whole circle with no empty gaps</string>
+    <string name="cl_124_fix_about_row">Renamed the Changelog row in Settings to View changelogs and updated its subtitle</string>
+    <string name="cl_124_remove_old_changelog">Removed the old card-style changelog layout</string>
+    <string name="cl_130_add_changelog">Added the Changelog screen in Settings with the history from 1.0 to 1.2.3</string>
+    <string name="cl_130_fix_backup_path">Fixed backups not being written to a custom folder on Android 11+</string>
+    <string name="cl_130_fix_backup_error">Fixed backup and restore error messages so the cause is always shown</string>
+    <string name="cl_122_add_backup_restore">Added Backup and Restore in place of Export CSV and Import CSV</string>
+    <string name="cl_122_add_auto_backup">Added automatic backup when a new app version is detected (switch, on by default)</string>
+    <string name="cl_122_add_backup_path">Added Backup path: choose any folder or keep the default folder</string>
+    <string name="cl_122_change_file_name">Backup files are now named by time: smartexpense_backup_yyyyMMdd_HHmmss.csv</string>
+    <string name="cl_122_remove_csv_rows">Removed the Export CSV and Import CSV rows from Data (still available in Admin)</string>
+    <string name="cl_121_add_settings_tab">Added the new Settings tab with 4 groups: Account, Settings, Data, About</string>
+    <string name="cl_121_add_account_screen">Added the Account screen: avatar, name, gender, age and email</string>
+    <string name="cl_121_add_home_logo">Added the SmartExpense logo and name to the top of Home</string>
+    <string name="cl_121_fix_insets">Fixed content overlapping the status bar on Android 15+</string>
+    <string name="cl_121_fix_fab">Fixed the + button staying visible on the Settings tab</string>
+    <string name="cl_120_add_category_manage">Added category management in Admin: add, edit, delete and change icons</string>
+    <string name="cl_120_add_activity_log">Added the admin activity log</string>
+    <string name="cl_120_add_sample_data">Added sample data for quick testing</string>
+    <string name="cl_120_change_stats">Improved Statistics with a category pie chart and legend</string>
+    <string name="cl_120_fix_sync">Made profile sync with the server more reliable</string>
+    <string name="cl_110_add_auth">Added Firebase sign-up, sign-in, password reset and Demo mode</string>
+    <string name="cl_110_add_admin_users">Added user management: details, lock or unlock and change role</string>
+    <string name="cl_110_add_search_filter">Added transaction search and filtering by category and month</string>
+    <string name="cl_110_add_budget">Added the monthly spending budget and an over-budget warning</string>
+    <string name="cl_110_fix_currency">Unified VND currency display across the app</string>
+    <string name="cl_100_add_app">Released SmartExpense - a personal finance manager</string>
+    <string name="cl_100_add_transactions">Added income and expense entries with category, note and date</string>
+    <string name="cl_100_add_overview">Added the Home overview with balance, income and monthly spending</string>
+    <string name="cl_100_add_list_calendar">Added a transaction list grouped by day and a calendar view</string>
+    <string name="cl_100_add_stats">Added Statistics by category with charts</string>
+    <string name="cl_100_add_theme_language">Added light or dark theme and Vietnamese or English language</string>
+    <string name="cl_100_add_room_offline">Stored data offline with Room, no network required</string>
+    <string name="settings_backup">Backup</string>
+    <string name="settings_restore">Restore</string>
+    <string name="settings_auto_backup">Automatic backup</string>
+    <string name="settings_auto_backup_desc">Automatically make a backup of everything when a new version of the application is found</string>
+    <string name="settings_backup_path">Backup path</string>
+    <string name="settings_backup_path_default">Default</string>
+    <string name="backup_path_dialog_msg">Backups will be saved to:\n%1$s</string>
+    <string name="backup_path_change">Choose folder</string>
+    <string name="backup_path_reset">Use default</string>
+    <string name="backup_path_saved">Backup folder updated</string>
+    <string name="backup_done">Backup saved to %1$s</string>
+    <string name="backup_failed_msg">Could not create the backup: %1$s</string>
+    <string name="backup_no_data">There is no data to back up yet</string>
+    <string name="backup_write_failed">Could not write the backup file</string>
+    <string name="auto_backup_on">Automatic backup turned on</string>
+    <string name="auto_backup_off">Automatic backup turned off</string>
+    <string name="restore_done">Restored: %1$d added, %2$d updated, %3$d skipped</string>
+    <string name="restore_failed">Restore failed: %1$s</string>
+    <string name="cd_restore">Restore data</string>
+    <string name="cd_auto_backup">Automatic backup</string>
+    <string name="cd_backup_folder">Backup folder</string>
+    <string name="settings_on">On</string>
+    <string name="settings_off">Off</string>
+    <string name="settings_help_title">Help</string>
+    <string name="settings_help_msg">SmartExpense helps you record income and expenses and track a monthly budget.\n\n• Tap + to add a transaction.\n• Use the Transactions tab to switch between list and calendar.\n• Change language, dark mode and account details in Settings.\n• Export CSV to back up your profile data.\n\nIf you need more help, contact the app administrator.</string>
+    <string name="settings_github">Github</string>
+    <string name="settings_github_link">github.com</string>
+    <string name="settings_notifications_unavailable">Could not open notification settings on this device</string>
+    <string name="settings_github_unavailable">Could not open a browser</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_app_msg">SmartExpense is a personal finance manager: record transactions, view category statistics and sync your profile to the server.</string>
+    <string name="logout_confirm_msg">Are you sure you want to sign out of SmartExpense?</string>
+
+    <!-- ================= Account edit screen ================= -->
+    <string name="account_title">Account</string>
+    <string name="account_photo">Photo</string>
+    <string name="account_upload_image">Upload Image</string>
+    <string name="account_name">Name</string>
+    <string name="account_gender">Gender</string>
+    <string name="account_age">Age</string>
+    <string name="account_email">Email</string>
+    <string name="account_male">Male</string>
+    <string name="account_female">Female</string>
+    <string name="account_name_required">Name cannot be empty</string>
+    <string name="account_age_invalid">Age must be between 1 and 120</string>
+    <string name="account_save_done">Account details saved</string>
+    <string name="account_save_failed">Could not save account details</string>
+    <string name="account_pick_image_failed">Could not read the selected image</string>
+    <!-- Edit/Delete account (1.3.1) -->
+    <string name="account_edit">Edit account</string>
+    <string name="account_delete">Delete account</string>
+    <string name="account_delete_confirm_msg">Are you sure you\'re going to delete this account? All transactions and the profile will be removed from the database.</string>
+    <string name="account_yes">Yes</string>
+    <string name="account_no">No</string>
+    <string name="account_yes_countdown">Wait %1$d s…</string>
+    <string name="account_delete_done">Account deleted</string>
+    <string name="account_delete_failed">Could not delete this account, please try again</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_save">Save changes</string>
+    <string name="cd_avatar">Avatar</string>
+
+    <!-- ================= Theme ================= -->
+    <string name="theme_title">Appearance</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- ================= Firebase Firestore / sync profile (1.3.0) ================= -->
+    <string name="admin_database">Cloud database</string>
+    <string name="sync_pull">Pull profiles from Firestore</string>
+    <string name="sync_push">Upload device data to Firestore</string>
+    <string name="sync_last_at">Last sync: %1$s</string>
+    <string name="sync_never">Never synced</string>
+    <string name="sync_confirm_msg">Your profile (name, email, created date) will be stored in the Firestore database on Firebase. Your password is never sent. Continue?</string>
+    <string name="sync_confirm_now">Sync now</string>
+
+    <!-- ================= Admin - CSV import/export ================= -->
+    <string name="csv_export_file">Export CSV to file…</string>
+    <string name="csv_import_file">Import CSV from file…</string>
+    <string name="csv_import_confirm_title">Import CSV into the system?</string>
+    <string name="csv_import_confirm_msg">Matching uids will be updated; new uids will be added to Room and accounts.csv. Passwords are not affected.</string>
+    <string name="csv_export_done">Exported %1$d rows to the file</string>
+    <string name="csv_import_done">CSV import: %1$d added, %2$d updated, %3$d skipped</string>
+    <string name="csv_import_failed">Could not import CSV: %1$s</string>
+    <string name="csv_export_failed">Could not export CSV: %1$s</string>
+    <string name="csv_io_failed">CSV operation failed: %1$s</string>
+    <string name="csv_io_hint">Use the buttons below to export/import customer account CSV files through Android\'s file picker (no storage permission needed).</string>
+
+    <string name="btn_logout">Sign out</string>
+    <string name="btn_ok">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="budget_dialog_title">Monthly spending budget</string>
+    <string name="budget_dialog_hint">Enter amount (VND)</string>
+
+    <!-- ================= Admin - common ================= -->
+    <string name="admin_tab_overview">Overview</string>
+    <string name="admin_tab_users">Users</string>
+    <string name="admin_tab_transactions">Transactions</string>
+    <string name="admin_tab_settings">Settings</string>
+    <string name="admin_greeting">Hello, Admin</string>
+    <string name="admin_pill_admin">Admin</string>
+    <string name="metric_users">Users</string>
+    <string name="metric_transactions">Transactions</string>
+    <string name="metric_active_today">Active today</string>
+    <string name="metric_locked">Locked accounts</string>
+    <string name="admin_new_users_7d">New users in 7 days</string>
+    <string name="admin_sample_note">Sample data</string>
+    <string name="admin_filter_flagged">Flagged</string>
+    <string name="user_role_admin">Admin</string>
+    <string name="user_role_user">User</string>
+
+    <!-- ================= Admin - user list & detail ================= -->
+    <string name="user_list_title">Users</string>
+    <string name="search_hint">Search by name or email</string>
+    <string name="status_active">Active</string>
+    <string name="status_locked">Locked</string>
+    <string name="user_detail_title">User details</string>
+    <string name="user_created_at">Joined</string>
+    <string name="user_tx_count">Transactions</string>
+    <string name="user_last_login">Last sign-in</string>
+    <string name="user_role_row">Role</string>
+    <string name="btn_lock">Lock account</string>
+    <string name="btn_unlock">Unlock</string>
+    <string name="btn_reset_password">Reset password</string>
+    <string name="lock_confirm_title">Lock this account?</string>
+    <string name="lock_confirm_msg">The account will not be able to sign in on this device. You can unlock it at any time.</string>
+    <string name="unlock_confirm_title">Unlock this account?</string>
+    <string name="unlock_confirm_msg">The account will be allowed to sign in normally again.</string>
+    <string name="reset_password_confirm">Send a password reset email to this address?</string>
+    <string name="cannot_lock_self">You cannot lock yourself or another admin account</string>
+
+    <!-- ================= Admin - categories ================= -->
+    <string name="category_manage_title">Category management</string>
+    <string name="category_type_expense">Expense</string>
+    <string name="category_type_income">Income</string>
+    <string name="category_dialog_add_title">Add category</string>
+    <string name="category_dialog_edit_title">Edit category</string>
+    <string name="category_dialog_name_hint">Category name</string>
+    <string name="category_dialog_color_hint">Color code (e.g. #2563EB)</string>
+    <string name="category_error_invalid_color">Invalid color code</string>
+
+    <!-- ================= Admin - CSV ================= -->
+    <string name="csv_manage_title">CSV file management</string>
+    <string name="csv_file_status">File status</string>
+    <string name="csv_exists">Exists</string>
+    <string name="csv_missing">Not created</string>
+    <string name="csv_size">Size</string>
+    <string name="csv_rows">Data rows</string>
+    <string name="csv_modified">Last modified</string>
+    <string name="csv_room_count">Room profiles</string>
+    <string name="csv_ok">CSV matches Room</string>
+    <string name="csv_warning_missing">The CSV file does not exist. New sign-ups will only write to Room; use \"Rebuild CSV\" to create a complete file.</string>
+    <string name="csv_warning_mismatch">The CSV is missing or out of sync with Room. Please use \"Rebuild CSV\".</string>
+    <string name="btn_rebuild_csv">Rebuild CSV</string>
+    <string name="btn_delete_csv">Delete CSV file</string>
+    <string name="rebuild_confirm_title">Rebuild CSV from Room?</string>
+    <string name="rebuild_confirm_msg">accounts.csv will be regenerated from all existing profiles, without duplicate rows.</string>
+    <string name="delete_csv_confirm_title_1">Delete the CSV file?</string>
+    <string name="delete_csv_confirm_msg_1">This is step 1 of 2. The file is only deleted at the final confirmation.</string>
+    <string name="delete_csv_confirm_title_2">Delete permanently?</string>
+    <string name="delete_csv_confirm_msg_2">accounts.csv will be removed from the app storage (data in Room and Firebase is kept).</string>
+    <string name="switch_auto_recreate">Automatically recreate the CSV when deleted</string>
+    <string name="switch_desc_on">ON: if the file goes missing, the app rebuilds it from Room on launch, sign-in or sign-up.</string>
+    <string name="switch_desc_off">OFF: the app will not create the file automatically. New sign-ups still write to Room; the admin may see a missing-CSV warning.</string>
+    <string name="admin_settings_categories">Category management</string>
+    <string name="admin_settings_csv">CSV file management</string>
+    <string name="admin_settings_logs">Activity log</string>
+    <string name="admin_settings_backup">Data backup</string>
+    <string name="admin_settings_csv_badge">CSV missing/out of sync</string>
+
+    <!-- ================= Log ================= -->
+    <string name="activity_log_title">Activity log</string>
+    <string name="log_empty">No activity recorded yet</string>
+    <string name="log_action_lock">locked account</string>
+    <string name="log_action_unlock">unlocked account</string>
+    <string name="log_action_reset_pw">reset password</string>
+    <string name="log_action_rebuild_csv">rebuilt CSV</string>
+    <string name="log_action_delete_csv">deleted CSV</string>
+    <string name="log_action_toggle_csv">toggled CSV switch</string>
+    <string name="preamble_demo">Want a quick look without setting anything up?</string>
+    <string name="btn_demo">Run DEMO (built-in sample data)</string>
+
+    <!-- ================= Shared labels ================= -->
+    <string name="role_admin_title">Administrator</string>
+    <string name="sys_syncing">Syncing…</string>
+    <string name="tx_fallback_title">Transaction</string>
+    <string name="admin_only_msg">Only admin accounts can access this section</string>
+    <string name="add_edit_save_failed">Could not save the transaction</string>
+    <string name="log_toggle_on">ON</string>
+    <string name="log_toggle_off">OFF</string>
+
+    <!-- ================= Weekdays (calendar) ================= -->
+    <string name="day_mon">Mon</string>
+    <string name="day_tue">Tue</string>
+    <string name="day_wed">Wed</string>
+    <string name="day_thu">Thu</string>
+    <string name="day_fri">Fri</string>
+    <string name="day_sat">Sat</string>
+    <string name="day_sun">Sun</string>
+
+    <!-- ================= Auth messages ================= -->
+    <string name="msg_register_success">Signed up successfully</string>
+    <string name="msg_login_failed">Could not sign in. Please try again.</string>
+    <string name="msg_register_failed">Could not create the account. Please try again.</string>
+    <string name="msg_email_exists">This email is already registered</string>
+    <string name="msg_weak_password">Password is too weak; use at least 6 characters</string>
+    <string name="msg_wrong_credentials">Incorrect email or password</string>
+    <string name="msg_auth_failed">Action failed. Check your connection or try again.</string>
+    <string name="msg_not_configured">Firebase is not configured: replace google-services.json with a real one (see API_SETUP.md)</string>
+    <string name="msg_account_locked">Your account is locked. Contact an administrator to unlock it.</string>
+    <string name="msg_reset_sent">Password reset email sent. Please check your inbox.</string>
+    <string name="msg_reset_failed">Could not send the password reset email</string>
+
+    <!-- ================= CSV messages ================= -->
+    <string name="msg_csv_save_failed">Signed up successfully but writing the local profile/CSV failed. Sign in again to recover automatically.</string>
+    <string name="msg_csv_shared">CSV copy created for sharing</string>
+    <string name="msg_csv_share_failed">Could not export the CSV file</string>
+    <string name="msg_csv_rebuilt">CSV rebuilt from Room data</string>
+    <string name="msg_csv_deleted">CSV file deleted</string>
+    <string name="msg_csv_delete_failed">Could not delete the CSV file</string>
+    <string name="msg_csv_import_failed">Could not import the CSV file</string>
+    <string name="msg_csv_import_empty">The CSV file has no valid data rows</string>
+    <string name="csv_err_write_target">Could not open the destination file for writing</string>
+    <string name="csv_err_read_source">Could not read the selected file</string>
+
+    <!-- ================= Firebase / sync messages ================= -->
+    <string name="msg_api_unreachable">Could not reach Firebase. Check your connection and try again.</string>
+    <string name="msg_api_sync_failed">Sync failed</string>
+    <string name="msg_sync_pull_done">Pulled %1$d profiles from Firestore</string>
+    <string name="msg_sync_push_done">Uploaded %1$d profiles to Firestore</string>
+    <string name="profile_sync_no_profile">Could not load your profile, please try again</string>
+    <string name="profile_sync_done">Profile synced to Firebase</string>
+
+    <!-- ================= Transaction messages ================= -->
+    <string name="msg_tx_saved">Transaction saved</string>
+    <string name="msg_tx_delete_success">Transaction deleted</string>
+    <string name="msg_tx_load_failed">Transaction not found</string>
+
+    <!-- ================= Admin messages ================= -->
+    <string name="msg_locked_toast">Account locked (takes effect on this device only)</string>
+    <string name="msg_unlocked_toast">Account unlocked</string>
+    <string name="msg_reset_sent_to">Password reset email sent to %1$s</string>
+    <string name="msg_admin_not_found">User not found</string>
+    <string name="demo_account_name">Demo account</string>
+
+    <!-- ================= Default categories (first-run seed) ================= -->
+    <string name="cat_food">Food &amp; drinks</string>
+    <string name="cat_transport">Transport</string>
+    <string name="cat_education">Education</string>
+    <string name="cat_shopping">Shopping</string>
+    <string name="cat_entertainment">Entertainment</string>
+    <string name="cat_health">Health</string>
+    <string name="cat_salary">Salary</string>
+    <string name="cat_bonus">Bonus</string>
+
+    <!-- ================= Demo transaction notes ================= -->
+    <string name="demo_note_salary">Monthly salary</string>
+    <string name="demo_note_bonus">Project bonus</string>
+    <string name="demo_note_lunch">Canteen lunch</string>
+    <string name="demo_note_coffee">Coffee with a friend</string>
+    <string name="demo_note_fuel">Fuel refill</string>
+    <string name="demo_note_book">Major study book</string>
+    <string name="demo_note_clothes">New shirt + shoes</string>
+    <string name="demo_note_movie">Movie tickets</string>
+    <string name="demo_note_dental">Dental check-up</string>
+    <string name="demo_note_party">End-of-month team party</string>
+
+    <!-- ================= Admin sample transactions ================= -->
+    <string name="sample_owner_1">Pham Hung</string>
+    <string name="sample_owner_2">Nguyen Van A</string>
+    <string name="sample_owner_3">Le Thi B</string>
+    <string name="sample_owner_4">Tran Mai</string>
+    <string name="sample_tx_1">Large transfer</string>
+    <string name="sample_tx_2">October salary</string>
+    <string name="sample_tx_3">Office lunch</string>
+    <string name="sample_tx_4">Tuition discount</string>
+    <string name="sample_tx_5">Weekly fuel</string>
+    <string name="sample_tx_6">English study book</string>
+    <string name="sample_tx_7">Project bonus</string>
+    <string name="sample_tx_8">Weekend movie</string>
+    <string name="sample_tx_9">Monthly utilities</string>
+    <string name="sample_tx_10">Quarterly bonus</string>
+    <!-- Language (3.10) -->
+    <string name="profile_language">Language</string>
+    <string name="language_title">Language</string>
+    <string name="lang_system">Follow system</string>
+    <string name="btn_continue">Continue</string>
+
+    <!-- Data permission notice for CSV export/import via My Files (3.2c) -->
+    <string name="csv_permission_title">Data permission</string>
+    <string name="csv_permission_msg">The app uses the Storage Access Framework to work with My Files on your phone: Android opens the file picker and you simply pick where to save or which CSV file to use. No full storage permission is required - the app only reads/writes the exact file you choose.</string>
+    <!-- Plurals for the changelog summary and section titles -->
+    <plurals name="changelog_features">
+        <item quantity="one">%d feature</item>
+        <item quantity="other">%d features</item>
+    </plurals>
+    <plurals name="changelog_fixes">
+        <item quantity="one">%d fix</item>
+        <item quantity="other">%d fixes</item>
+    </plurals>
+    <plurals name="changelog_removes">
+        <item quantity="one">%d remove</item>
+        <item quantity="other">%d removes</item>
+    </plurals>
+    <plurals name="changelog_days_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <plurals name="changelog_group_new">
+        <item quantity="one">New</item>
+        <item quantity="other">News</item>
+    </plurals>
+    <plurals name="changelog_group_fix">
+        <item quantity="one">Fix</item>
+        <item quantity="other">Fixes</item>
+    </plurals>
+    <plurals name="changelog_group_remove">
+        <item quantity="one">Remove</item>
+        <item quantity="other">Removes</item>
+    </plurals>
+
+</resources>

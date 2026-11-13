@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bộ chọn tháng ◀ ▶ dùng lại ở Trang chủ/Giao dịch/Thống kê (mục 5.3, 3.11) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <ImageButton
+        android:id="@+id/btn_prev"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/btn_cancel"
+        android:src="@drawable/ic_arrow_back"
+        android:tint="@color/text_secondary" />
+
+    <TextView
+        android:id="@+id/month_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Tháng 10/2026" />
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/btn_ok"
+        android:src="@drawable/ic_arrow_forward"
+        android:tint="@color/text_secondary" />
+</LinearLayout>

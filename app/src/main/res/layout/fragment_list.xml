@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tab Giao dịch (mục 5.4, 3.11): chip lọc, bộ chọn tháng, Danh sách/Lịch -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/screen_margin"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tab_transactions"
+            android:textAppearance="@style/TextAppearance.App.Title" />
+
+        <!-- Chuyển Danh sách / Lịch -->
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggle_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedButton="@id/btn_mode_list"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_mode_list"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="0dp"
+                android:paddingHorizontal="10dp"
+                android:text="@string/list_mode_default"
+                android:textSize="11sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_mode_calendar"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="0dp"
+                android:paddingHorizontal="10dp"
+                android:text="@string/list_mode_calendar"
+                android:textSize="11sp" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>
+
+    <!-- Chip lọc Tất cả / Thu / Chi (pill set state qua code) -->
+    <LinearLayout
+        android:id="@+id/filter_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/chip_all"
+            style="@style/FilterChip"
+            android:text="@string/list_filter_all" />
+
+        <TextView
+            android:id="@+id/chip_income"
+            style="@style/FilterChip"
+            android:layout_marginStart="8dp"
+            android:text="@string/list_filter_income" />
+
+        <TextView
+            android:id="@+id/chip_expense"
+            style="@style/FilterChip"
+            android:layout_marginStart="8dp"
+            android:text="@string/list_filter_expense" />
+    </LinearLayout>
+
+    <com.example.smartexpense.ui.common.MonthSelectorView
+        android:id="@+id/month_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" />
+
+    <!-- Nội dung: Danh sách hoặc Lịch -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            tools:listitem="@layout/item_transaction_row" />
+
+        <LinearLayout
+            android:id="@+id/calendar_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/surface"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <!-- Hàng nhãn thứ T2..CN -->
+            <LinearLayout style="@style/CalendarHeadRow">
+                <TextView style="@style/CalendarHeadCell" android:text="@string/day_mon" />
+                <TextView style="@style/CalendarHeadCell" android:text="@string/day_tue" />
+                <TextView style="@style/CalendarHeadCell" android:text="@string/day_wed" />
+                <TextView style="@style/CalendarHeadCell" android:text="@string/day_thu" />
+                <TextView style="@style/CalendarHeadCell" android:text="@string/day_fri" />
+                <TextView style="@style/CalendarHeadCell" android:text="@string/day_sat" />
+                <TextView style="@style/CalendarHeadCell" android:text="@string/day_sun" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                tools:itemCount="28"
+                tools:listitem="@layout/item_calendar_day" />
+
+            <!-- Giao dịch của ngày đang chọn + tổng của ngày -->
+            <TextView
+                android:id="@+id/tv_day_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:text="Tổng ngày 28/10: +0 ₫ / -0 ₫" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_day_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_transaction_row" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/list_empty"
+            android:textColor="@color/text_hint"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

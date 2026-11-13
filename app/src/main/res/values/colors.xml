@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bảng màu cố định - mục 4.1 của đặc tả -->
+<resources>
+    <color name="blue_primary">#2563EB</color>
+    <color name="blue_light">#EAF1FF</color>
+    <color name="blue_chart_muted">#BFD4FB</color>
+
+    <color name="screen_bg">#F3F4F6</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#9CA3AF</color>
+
+    <color name="green">#16A34A</color>
+    <color name="green_light">#E7F6EC</color>
+    <color name="red">#DC2626</color>
+    <color name="red_light">#FDECEC</color>
+
+    <!-- Màu pastel cho icon màn Cài đặt (mục 5.8) -->
+    <color name="orange">#F97316</color>
+    <color name="orange_light">#FFF1E3</color>
+    <color name="purple">#7C3AED</color>
+    <color name="purple_light">#F0EBFF</color>
+    <color name="pink">#EC4899</color>
+    <color name="pink_light">#FDE8F1</color>
+
+    <color name="divider">#E5E7EB</color>
+
+    <!-- Nhật ký thay đổi dạng dòng thời gian + nút chuyển biểu đồ -->
+    <color name="changelog_chip_bg">#E5E7EB</color>
+    <color name="timeline_line">#D1D5DB</color>
+    <color name="timeline_dot">#9CA3AF</color>
+    <color name="group_header_bg">#F9FAFB</color>
+    <color name="group_count_bg">#E5E7EB</color>
+
+</resources>

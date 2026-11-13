@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Theme Material 3 DayNight: tự chuyển sáng/tối theo AppCompatDelegate (mục 4).
+    Màu thật nằm ở values/colors.xml và values-night/colors.xml.
+-->
+<resources>
+    <style name="Theme.SmartExpense" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/screen_bg</item>
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/screen_bg</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">@bool/light_system_bars</item>
+    </style>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Màu icon/chữ tab Bottom Nav: chọn = xanh, thường = xám phụ -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/blue_primary" android:state_checked="true" />
+    <item android:color="@color/text_secondary" />
+</selector>

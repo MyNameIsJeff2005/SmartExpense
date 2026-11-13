@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ô danh mục trong lưới 4x2 của màn Thêm/Sửa giao dịch (mục 5.6) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <FrameLayout
+        android:id="@+id/badge"
+        android:layout_width="56dp"
+        android:layout_height="56dp">
+
+        <View
+            android:id="@+id/badge_circle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_badge_circle" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/detail_category"
+            app:tint="@android:color/white"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:src="@drawable/ic_food" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/text_secondary"
+        android:textSize="11sp"
+        tools:text="Ăn uống" />
+</LinearLayout>

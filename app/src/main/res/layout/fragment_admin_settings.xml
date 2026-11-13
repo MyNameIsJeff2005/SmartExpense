@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tab Cài đặt admin (mục 6.7): các dòng điều hướng + Đăng xuất -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="24dp">
+
+        <!-- Avatar 84dp chữ cái đầu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_avatar"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:background="@drawable/bg_badge_circle"
+                android:gravity="center"
+                android:textColor="@color/blue_primary"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                tools:backgroundTint="@color/blue_light"
+                tools:text="A" />
+
+            <TextView
+                android:id="@+id/tv_admin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/role_admin_title"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_admin_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                tools:text="admin@example.com" />
+        </LinearLayout>
+
+        <!-- Thẻ điều hướng: icon xanh trái + mũi tên phải, kẻ mảnh giữa các dòng -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.App.Card.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp">
+
+                <LinearLayout
+                    android:id="@+id/row_categories"
+                    style="@style/AdminSettingRow">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/admin_settings_categories"
+                        android:src="@drawable/ic_list"
+                        app:tint="@color/blue_primary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/admin_settings_categories"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/admin_settings_categories"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/text_secondary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_csv"
+                    style="@style/AdminSettingRow">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/admin_settings_csv"
+                        android:src="@drawable/ic_dashboard"
+                        app:tint="@color/blue_primary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/admin_settings_csv"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+
+                    <!-- Badge nhắc khi CSV thiếu/lệch (mục 6.7) -->
+                    <TextView
+                        android:id="@+id/tv_csv_badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_pill_red"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="2dp"
+                        android:text="@string/admin_settings_csv_badge"
+                        android:textColor="@color/red"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="6dp"
+                        android:contentDescription="@string/admin_settings_csv"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/text_secondary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_logs"
+                    style="@style/AdminSettingRow">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/admin_settings_logs"
+                        android:src="@drawable/ic_list"
+                        app:tint="@color/blue_primary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/admin_settings_logs"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/admin_settings_logs"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/text_secondary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_backup"
+                    style="@style/AdminSettingRow">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/admin_settings_backup"
+                        android:src="@drawable/ic_share"
+                        app:tint="@color/blue_primary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/admin_settings_backup"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/admin_settings_backup"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/text_secondary" />
+                </LinearLayout>
+
+                <!-- Chế độ sáng / tối -->
+                <LinearLayout
+                    android:id="@+id/row_theme"
+                    style="@style/AdminSettingRow">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/profile_theme"
+                        android:src="@drawable/ic_visibility"
+                        app:tint="@color/blue_primary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/profile_theme"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_admin_theme_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp"
+                        tools:text="Theo hệ thống" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/profile_theme"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/text_secondary" />
+                </LinearLayout>
+
+                <!-- Ngôn ngữ (mục 3.10): Theo hệ thống / Tiếng Việt / English -->
+                <LinearLayout
+                    android:id="@+id/row_language"
+                    style="@style/AdminSettingRow">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/profile_language"
+                        android:src="@drawable/ic_flag"
+                        app:tint="@color/blue_primary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/profile_language"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_admin_language_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp"
+                        tools:text="Tiếng Việt" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/profile_language"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/text_secondary" />
+                </LinearLayout>
+
+                <!-- Cơ sở dữ liệu đám mây (hiển thị, không bấm được) -->
+                <LinearLayout
+                    android:id="@+id/row_api"
+                    style="@style/AdminSettingRow"
+                    android:clickable="false"
+                    android:focusable="false">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/admin_database"
+                        android:src="@drawable/ic_swap"
+                        app:tint="@color/blue_primary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/admin_database"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_api_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:ellipsize="middle"
+                        android:gravity="end"
+                        android:maxLines="1"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="11sp"
+                        tools:text="Firestore · smartexpense-58538" />
+                </LinearLayout>
+
+                <!-- Đồng bộ người dùng với server -->
+                <LinearLayout
+                    android:id="@+id/row_sync"
+                    style="@style/AdminSettingRow">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/profile_sync"
+                        android:src="@drawable/ic_arrow_forward"
+                        app:tint="@color/blue_primary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/profile_sync"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_sync_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp"
+                        tools:text="Chưa từng đồng bộ" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/profile_sync"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/text_secondary" />
+                </LinearLayout>
+
+                <!-- Phiên bản ứng dụng -->
+                <LinearLayout
+                    android:id="@+id/row_version"
+                    style="@style/AdminSettingRow">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@string/profile_version"
+                        android:src="@drawable/ic_dashboard"
+                        app:tint="@color/blue_primary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/profile_version"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_version_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp"
+                        tools:text="1.0 (1)" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_logout"
+            style="@style/Widget.App.Button.Danger"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/btn_logout" />
+    </LinearLayout>
+</ScrollView>

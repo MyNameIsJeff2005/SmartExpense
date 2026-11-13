@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Một phiên bản trên dòng thời gian: tiêu đề + tóm tắt + chi tiết mở rộng -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/row_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingBottom="18dp">
+
+        <!-- Chừa chỗ cho dòng thời gian do ItemDecoration vẽ -->
+        <View
+            android:layout_width="28dp"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_primary"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    tools:text="v1.2.4" />
+
+                <TextView
+                    android:id="@+id/tv_installed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_pill_green"
+                    android:paddingStart="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/changelog_installed"
+                    android:textColor="@color/green"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                tools:text="Hôm nay · 3 features · 2 fixes · 1 remove" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_expand"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/changelog_expand"
+            android:rotation="90"
+            android:src="@drawable/ic_chevron_right"
+            app:tint="@color/text_secondary" />
+    </LinearLayout>
+
+    <!-- Các thẻ New / Fixes / Removes được adapter thêm vào lúc chạy -->
+    <LinearLayout
+        android:id="@+id/ll_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</LinearLayout>

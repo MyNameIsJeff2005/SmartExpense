@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".SmartExpenseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartExpense">
+
+        <!-- Lưu lựa chọn ngôn ngữ theo app (AppCompat per-app locale, API < 33) -->
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+
+        <!-- AuthActivity: Register - Login - Forgot password -->
+        <activity
+            android:name=".ui.auth.AuthActivity"
+            android:exported="false" />
+
+        <!-- MainActivity: Bottom Navigation 4 tab -->
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Người dùng -->
+        <activity
+            android:name=".ui.transactions.AddEditTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.transactions.DetailActivity"
+            android:exported="false" />
+
+        <!-- Tài khoản: xem/sửa thông tin cá nhân -->
+        <activity
+            android:name=".ui.profile.AccountActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Nhật ký thay đổi: lịch sử cập nhật từ 1.0 đến phiên bản hiện tại -->
+        <activity
+            android:name=".ui.changelog.ChangelogActivity"
+            android:exported="false" />
+
+        <!-- Admin -->
+        <activity
+            android:name=".ui.admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.UserDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.CategoryManageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.CsvManageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.ActivityLogActivity"
+            android:exported="false" />
+
+        <!-- FileProvider: chia sẻ bản sao accounts.csv -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

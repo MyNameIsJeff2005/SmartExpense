@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_overview"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/admin_tab_overview" />
+    <item
+        android:id="@+id/nav_users"
+        android:icon="@drawable/ic_person"
+        android:title="@string/admin_tab_users" />
+    <item
+        android:id="@+id/nav_transactions"
+        android:icon="@drawable/ic_list"
+        android:title="@string/admin_tab_transactions" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/admin_tab_settings" />
+</menu>

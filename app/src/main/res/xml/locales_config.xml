@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Danh sách ngôn ngữ app hỗ trợ.
+    Giúp Android 13+ hiện mục "Ngôn ngữ ứng dụng" trong Cài đặt máy để người dùng
+    chọn riêng tiếng Việt / tiếng Anh cho SmartExpense (mặc định vẫn theo hệ thống).
+-->
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="vi" />
+    <locale android:name="en" />
+</locale-config>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Style dùng lại cho toàn app - mục 4.4 -->
+<resources>
+
+    <!-- Thẻ: nền trắng, không bóng, không viền -->
+    <style name="Widget.App.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardCornerRadius">@dimen/card_radius_medium</item>
+    </style>
+
+    <style name="Widget.App.Card.Large">
+        <item name="cardCornerRadius">@dimen/card_radius_large</item>
+    </style>
+
+    <style name="Widget.App.Card.Small">
+        <item name="cardCornerRadius">@dimen/card_radius_small</item>
+    </style>
+
+    <!-- Nút chính: nền xanh, chữ trắng, cao 56dp, bo 16dp -->
+    <style name="Widget.App.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/blue_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Nút nguy hiểm: nền đỏ nhạt, chữ đỏ -->
+    <style name="Widget.App.Button.Danger" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/red_light</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Nút text nhỏ -->
+    <style name="Widget.App.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/blue_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Ô nhập: nền trắng phẳng, bo 12dp, không gạch chân, hint #9CA3AF -->
+    <style name="Widget.App.Input" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/surface</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/input_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/input_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/input_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/input_radius</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+    </style>
+
+    <!-- FAB: nền xanh, icon trắng, không bóng -->
+    <style name="Widget.App.FAB" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/blue_primary</item>
+        <item name="tint">@color/white</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <!-- Chip nền xanh nhạt cho tab đang chọn của Bottom Navigation -->
+    <style name="Widget.App.BottomNav.ActiveIndicator" parent="">
+        <item name="android:background">@drawable/bg_nav_indicator</item>
+    </style>
+
+    <!-- Bàn phím số 3x4 (mục 5.6.5): phím cao 60dp, chữ 26sp, không viền -->
+    <style name="Keypad" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Keypad.Row" parent="Keypad" />
+
+    <style name="Keypad.Key" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Chip lọc phẳng bo tròn, nền trắng pill; trạng thái chọn tô xanh (mục 6.5, 5.4) -->
+    <style name="FilterChip" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">@drawable/bg_chip_unselected</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Lịch: hàng nhãn thứ, mỗi nhãn đồng đều -->
+    <style name="CalendarHeadRow" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="CalendarHeadCell" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_hint</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <!-- Row cài đặt admin: icon trái xanh, mũi tên phải, kẻ mảnh dưới -->
+    <style name="AdminSettingRow" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingVertical">4dp</item>
+        <!-- dùng drawable bg_divider có sẵn nếu cần đường kẻ -->
+    </style>
+
+    <!-- Row cài đặt màn Setting: icon pastel bên trái, mũi tên bên phải -->
+    <style name="SettingsRow" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingVertical">10dp</item>
+    </style>
+
+    <!-- Tiêu đề nhóm trong màn Setting (Account / Settings / Data / About) -->
+    <style name="SettingsSectionTitle" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Text chung -->
+    <style name="TextAppearance.App.Title" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.App.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>
